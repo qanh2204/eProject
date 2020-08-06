@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor-Tap</title>
+
+    <!-- Liên kết CSS Bootstrap -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <!-- Liên kết CSS do chúng ta tự viết (custom CSS) -->
+    <link href="../../assets/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- lien ket font-awesome -->
+    <link href="../../vendor/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="" type="text/css" rel="stylesheet" />
+</head>
+<style>
+    body {
+        font-family: europa, sans-serif;
+    }
+    
+    a {
+        color: black;
+        font-family: Oswald;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover {
+        text-decoration: none;    
+        color: red;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 80px;
+    }
+    img {
+        max-width: 100%;
+    }
+    /* navbar */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    position: relative;
+    background-color: white;
+}
+.menu-item {
+    flex: 0;
+}
+.menu-item > a {
+    line-height: 40px;
+}
+.submenu {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color:lightgray;
+}
+.submenu-title {
+        font-weight: bold;
+    } 
+.submenu-top {
+    display: flex;
+    justify-content: space-around;
+}
+.submenu-bottom {
+    display:flex;
+}
+.submenu-img {
+        height: 200px;
+        padding: 10px;
+    }
+    figcaption {
+        text-align: center;
+    }
+.menu-item:hover > a {
+    color: red;
+}  
+    .submenu {
+        display: none;
+    }
+    
+    .menu-item:hover .submenu {
+        display: flex;
+    }
+    /* content */
+    
+    .content {
+        padding-top: 100px;
+    }
+    /* quantity */
+    
+    .js-qty__num {
+        width: 40px;
+    }
+    /* next */
+    .left {
+        float: left ;
+    }
+    .right {
+        float: right ;
+    }
+    /* card */
+    .card{
+        border: none
+    }
+</style>

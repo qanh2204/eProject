@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor-CD</title>
+
+    <!-- Liên kết CSS Bootstrap -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <!-- Liên kết CSS do chúng ta tự viết (custom CSS) -->
+    <link href="../../assets/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- lien ket font-awesome -->
+    <link href="../../vendor/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet" />
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    a {
+        color: black;
+        font-family: Oswald;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a:hover {
+        text-decoration: none;    
+        color: #666;
+    }
+    
+    footer {
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border-color: white;
+        z-index: 1;
+        border-radius: 0%;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
+    
+    .submenu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        z-index: 1;
+    }
+    
+    .submenu-title {
+        font-weight: bold;
+    }
+    
+    .submenu-top {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .submenu-bottom {
+        display: flex;
+    }
+    
+    .submenu-item {
+        padding: 15px;
+    }
+    
+    .submenu-img {
+        height: 200px;
+        width: 200px;
+        padding: 10px;
+    }
+    /* hovershop */
+    
+    .submenu {
+        display: none;
+    }
+    
+    .menu-item:hover .submenu {
+        display: flex;
+    }
+    /* content */
+    
+    .content {
+        padding-top: 100px;
+    }
+    /* quantity */
+    
+    .js-qty__num {
+        width: 40px;
+    }
+    /* next */
+    .left {
+        float: left ;
+    }
+    .right {
+        float: right ;
+    }
+    /* card */
+    .card{
+        border: none
+    }
+</style>
+
+<body id="taylorCD">
+    <div class="container">
+        <!-- start navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Artist
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../taylor.html">Taylor Swift</a>
+                            <a class="dropdown-item" href="#">Justin Bieber</a>
+                            <a class="dropdown-item" href="#">Lady Gaga</a>
+                            <a class="dropdown-item" href="#">Maroon 5</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Genres
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Pop</a>
+                            <a class="dropdown-item" href="#">Electronic</a>
+                            <a class="dropdown-item" href="#">Rock</a>
+                            <a class="dropdown-item" href="#">Country</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Service
+                          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Pop</a>
+                            <a class="dropdown-item" href="#">Electronic</a>
+                            <a class="dropdown-item" href="#">Rock</a>
+                            <a class="dropdown-item" href="#">Country</a>
+                        </div>
+                    </li>
+                    <!-- start shop -->
+                    <li class="menu-item " id="menu-time">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <ul class="submenu-top">
+                                    <li class="submenu-top-item">
+                                        <a href="#" class="submenu-title">RH's Merchadise</a>
+                                        <ul class="submenu-list">
+                                            <li><a class="item-shop" href="#">T-shirt</a></li>
+                                            <li><a class="item-shop" href="#">Cup</a></li>
+                                            <li><a class="item-shop" href="#">Jewelry</a></li>
+                                            <li><a class="item-shop" href="#">Keychain</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-top-item">
+                                        <a href="#" class="submenu-title">Records</a>
+                                        <ul class="submenu-list">
+                                            <li><a class="item-shop" href="#">CD/DVD</a></li>
+                                            <li><a class="item-shop" href="#">Cassette Tape</a></li>
+                                            <li><a class="item-shop" href="#">Vinyl</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-top-item">
+                                        <a href="#" class="submenu-title">Ticket</a>
+                                        <ul class="submenu-list">
+                                            <li><a class="item-shop" href="#">Live shows</a></li>
+                                            <li><a class="item-shop" href="#">Contest</a></li>
+                                            <li><a class="item-shop" href="#">Intrumention</a></li>
+                                            <li><a class="item-shop" href="#">Opera</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="submenu-top-item">
+                                        <a href="#" class="submenu-title">Time lifestyle</a>
+                                        <ul class="submenu-list">
+                                            <li><a href="#">Phone Case</a></li>
+                                            <li><a href="#">Book</a></li>
+                                            <li><a href="#">Magazine</a></li>
+                                            <li><a href="#">Merchasie</a></li>
+                                            <li><a href="#">Player</a></li>
+                                            <li><a href="#">Speaker</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- End .submenu-top -->
+                            </li>
+                            <!-- End .submenu-item-->
+                            <li class="submenu-item">
+                                <a href="#" class="submenu-title submenu-bottom-title">Best-seller</a>
+                                <ul class="submenu-bottom">
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/1016/640/260">
+                                            <figcaption><a href="#">Merchadise</a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/1040/640/260">
+                                            <figcaption><a href="#">Record</a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/1039/640/260">
+                                            <figcaption><a href="#">Ticket</a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/164/640/260">
+                                            <figcaption><a href="#">Magazine</a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/164/640/260">
+                                            <figcaption><a href="#">Player</a></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="submenu-bottom-item">
+                                        <figure>
+                                            <img class="submenu-img" src="https://picsum.photos/id/164/640/260">
+                                            <figcaption><a href="#">Speaker</a></figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- End .submenu-item -->
+
+                        </ul>
+                    </li>
+                    <!-- end shop -->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a> &nbsp; &nbsp;
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <div class="row content">
+            <div class="col-5">
+                <img src="https://product.hstatic.net/1000304920/product/taylor-swift-folklore-5-the-stolen-lullabies-edition-deluxe-cd-dia-cd_f40503257c934b078c9e640e6c279629_grande.png" alt="" id="ProductPhotoImg">
+            </div>
+            <div class="col-7" style="text-align: center;">
+                <h6>TAYLOR SWIFT - FOLKLORE #5 THE "STOLEN LULLABIES" EDITION DELUXE CD</h6>
+                <b style="font-size: large;">25$</b>
+                <form name="shoprecord" method="get" onsubmit="return calculate()">
+                    <div class="js-qty" style="text-align: center;">
+                        <button type="button" class="js-qty__adjust js-qty__adjust--minus icon-fallback-text" data-id="" data-qty="0">
+                          <span class="icon icon-minus" aria-hidden="true"></span>
+                          <span class="fallback-text">−</span>
+                        </button>
+                        <input type="text" class="js-qty__num" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="quantity" id="Quantity">
+                        <button type="button" class="js-qty__adjust js-qty__adjust--plus icon-fallback-text" data-id="" data-qty="11">
+                          <span class="icon icon-plus" aria-hidden="true"></span>
+                          <span class="fallback-text">+</span>
+                        </button>
+                    </div>
+                    <br/><br/>
+                    <button type="submit" name="add" id="AddToCart" class="add-to-cart">
+                        <span class="add_to_cart" id="AddToCartText"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Add to cart</span>
+                    </button>
+                    <br/><br/>
+                    <div style="text-align: center;" data-mce-style="text-align: justify;">
+                        <b>each deluxe cd album includes:</b>
+                        <br>16 songs + bonus song “the lakes"
+                        <br>1 of 8 unique, collectible covers
+                        <br>1 of 8 unique, collectible back covers
+                        <br>1 of 8 unique disc photos
+                        <br>1 of 8 collectible album lyric booklets (each version contains 5 unique photos and artwork)
+                        <br><br>if purchased, a digital standard edition of the folklore album will be sent to the e-mail address supplied at checkout on july 24, 2020. please note, digital downloads are not available to customers outside the u.s.
+                        <br><br>© 2020 taylor swift
+                        <br>taylor swift®
+                        <br>used by permission. all rights reserved.
+                    </div>
+                    <p>
+                        <span class="left">
+                          <a href="#" title="" ><b>← Previous</b></a>
+                        </span>
+                        <span class="right">
+                          <a href="#" title=""><b>Next →</b></a>
+                        </span>
+                    </p>
+                </form>
+            </div>
+            <h2>Recommended products</h2>
+            <div class="row">
+                <div class="col-md">
+                    <div class="card">
+                        <img src="../../assets/img/product/sweater-taylor" class="card-img-top" alt="...">
+                        <div class="card-body" style="text-align:center;">
+                            <h6 class="card-title">Taylor Swift - Pullover</h6>
+                            <p class="card-text">$60</p>
+                            <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Add to cart</a>
+                        </div>
+                    </div>        
+                </div>
+                <div class="col-md">
+                        <div class="card">
+                            <img src="../../assets/img/product/taylor-vinyl" class="card-img-top" alt="...">
+                            <div class="card-body" style="text-align:center;">
+                                <h6 class="card-title">Taylor Swift - Vinyl</h6>
+                                <p class="card-text">$30</p>
+                                <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Add to cart</a>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="col-md">
+                            <div class="card">
+                                <img src="../../assets/img/product/phone-case-taylor" class="card-img-top" alt="...">
+                                <div class="card-body" style="text-align:center;">
+                                    <h6 class="card-title">Taylor Swift - Phone case</h6>
+                                    <p class="card-text">$15</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Add to cart</a>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="col-md">
+                                <div class="card">
+                                    <img src="../../assets/img/product/taylor-tap" class="card-img-top" alt="...">
+                                    <div class="card-body" style="text-align:center;">
+                                        <h6 class="card-title">Taylor Swift - Tap Cassette</h6>
+                                        <p class="card-text">$20</p>
+                                        <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> &nbsp Add to cart</a>
+                                    </div>
+                                </div>        
+                            </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="container-fluid"> &copy 2020
+    <a href="#"> <b class="group">GROUP 1</b></a> CUSC APTECH</footer>
+
+</html>
