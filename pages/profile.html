@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <h2 class="text-center">Profile</h2>
+            </div>
+            <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image"
+                        class="img-circle img-responsive"
+                        src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=50"></a> <br><br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <!--left col-->
+                <div class="text-center">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
+                        alt="avatar">
+                    <p>Upload a different photo...</p>
+                    <input type="file" class="text-center center-block file-upload">
+                </div>
+                </hr><br>
+            </div>
+            <div class="col-sm-9">
+                <form class="form" action="##" method="post" id="registrationForm">
+                    <div class="form-group row">                        
+                            <div class="col-md-2">
+                                <label for="Name"><h6>Name</h6></label>                            
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" title="enter your name if any.">
+                            </div>                                        
+                    </div>               
+                    <div class="form-group row">                        
+                            <div class="col-md-2">
+                                <label for="phone"><h6>Phone</h6></label>                                                        
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">                             
+                            </div>                                        
+                    </div>               
+                    <div class="form-group row">                        
+                            <div class="col-md-2">
+                                <label for="email"><h6>Email</h6></label>                            
+                            </div>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                            </div>                                        
+                    </div>               
+                    <div class="cform-group row">                        
+                            <div class="col-md-3">
+                                <label for="gender"><h6>Gender</h6></label>                            
+                            </div>
+                            <div class="col-md-2 custom-radio">
+                                <label for="male">
+                                    <input type="radio" class="form-check-input" name="gender" id="male" value="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="col-md-7">
+                                <label for="female">
+                                    <input type="radio" class="form-check-input" name="gender" id="female" value="female">
+                                    Female
+                                </label>  
+                            </div>     
+                    </div>      
+                   
+                </form>
+            </div>
+        </div>
+
+<script src="../vendor/jquery/jquery.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
