@@ -13,26 +13,23 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <h2 class="text-center">Profile</h2>
-            </div>
-            <div class="col-sm-2"><a href="/users" class="pull-right"><img title="profile image"
-                        class="img-circle img-responsive"
-                        src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=50"></a> <br><br><br>
-            </div>
+                <hr><br>
+        </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-4">
                 <!--left col-->
                 <div class="text-center">
                     <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail"
                         alt="avatar">
                     <p>Upload a different photo...</p>
-                    <input type="file" class="text-center center-block file-upload">
+                    <input type="file" class="text-center file-upload">
                 </div>
                 </hr><br>
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-8">
                 <form class="form" action="##" method="post" id="registrationForm">
                     <div class="form-group row">                        
                             <div class="col-md-2">
@@ -58,7 +55,7 @@
                                 <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
                             </div>                                        
                     </div>               
-                    <div class="cform-group row">                        
+                    <div class="form-group row">                        
                             <div class="col-md-3">
                                 <label for="gender"><h6>Gender</h6></label>                            
                             </div>
@@ -74,14 +71,36 @@
                                     Female
                                 </label>  
                             </div>     
-                    </div>      
-                   
+                    </div>   
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-2 col-form-label"><h6>Date of birth</h6></label>
+                        <div class="col-10">
+                          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                        </div>
+                    </div>   
+                    <div class="form-group row">
+                        <div class="col-md-3"></div>
+                        <div class="col-9">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Change Password
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-2"></div>
+                        <div class="col-xs-10">
+                             <br>
+                               <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-ok-sign"></i>Update</button>
+                         </div>
+                   </div>
                 </form>
             </div>
         </div>
 
 <script src="../vendor/jquery/jquery.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/javascript.js"></script>
 </body>
 
 </html>
