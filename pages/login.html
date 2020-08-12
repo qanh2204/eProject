@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Favicons -->
     <link href="../assets/img/favicon.png" rel="icon">
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -18,10 +21,65 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/login.css" type="text/css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="../assets/css/index/index-style.css" type="text/css"> -->
 
 </head>
 
 <body>
+
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Demo navbar -->
+    <!-- Header Section Begin -->
+    <header class="header ">
+        <div class="container-fluid fixed-top bg-dark headerBG">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo ">
+                        <a href="../index.html">
+                            <img src="../assets/img/index/logo.svg" alt="" style="width: 80px">
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu ">
+                            <ul>
+                                <li class="active"><a href="../index.html">Home</a></li>
+                                <li><a href="../about.html">About</a></li>
+                                <li><a href="#">Artists</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Store</a></li>
+                                <li><a href="#">Contact</a></li>
+
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./blog.html">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <div class="header__right__social ">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+
+    <!-- header end  -->
 
     <div class="login-wrap">
         <div class="login-html">
@@ -62,14 +120,64 @@
         </div>
     </div>
 
+    <!-- Footer Section Begin -->
+    <footer class="footer footer--normal spad set-bg" data-setbg="../assets/img/index/FT.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Phone</p>
+                                <h6>1-677-124-44227</h6>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Email</p>
+                                <h6>CUSC@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social countdown__text">
+                        <a href="./index.html"><img src="../assets/img/index/logo.svg" alt=""></a>
+
+                        <h2>Rhythm House</h2>
+                        <div class="footer__social__links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Stay With me</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
     <!-- Vendor JS Files -->
     <script src="../vendor/jquery/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.js"></script>
     <script src="../vendor/aos/aos.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- /////////// -->
+    <script src="../assets/js/index/jquery.slicknav.js"></script>
 
     <!-- Template Main JS File -->
     <script src="../assets/js/login.js"></script>
+    <script src="../assets/js//index/index.js"></script>
 </body>
 
 </html>
