@@ -84,36 +84,55 @@
     <div class="login-wrap">
         <div class="login-html">
             <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Forgot Password</label>
+            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Register</label>
             <div class="login-form">
+
                 <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="user" class="label">Username or Email</label>
-                        <input id="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="Sign In">
-                    </div>
+                    <form id="login" name="login" action="./profile.html" method="post">
+                        <div class="group">
+                            <label for="user" class="label">Username or Email</label>
+                            <input name="user" id="user" type="text" class="input">
+
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input name="pass" id="pass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
+                    </form>
+
                     <hr data-content="OR" class="hr-text">
                     <p>
-                        <a href="" class="btn btn-block btn-twitter"> <i class="fa fa-twitter"></i>   Login Twitter</a>
-                        <a href="" class="btn btn-block btn-facebook"> <i class="fa fa-facebook"></i>   Login facebook</a>
+                        <a href="./profile.html" class="btn btn-block btn-twitter"> <i class="fa fa-twitter"></i>   Login Twitter</a>
+                        <a href="./profile.html" class="btn btn-block btn-facebook"> <i class="fa fa-facebook"></i>   Login facebook</a>
                     </p>
 
                 </div>
-                <div class="for-pwd-htm">
-                    <div class="group">
-                        <label for="user" class="label">Username or Email</label>
-                        <input id="user" type="text" class="input">
-                    </div>
-                    <div class="group">
-                        <input type="submit" class="button" value="Reset Password">
-                    </div>
-                    <div class="hr"></div>
+                <div class="for-reg-htm">
+                    <form id="registration" name="registration" action="./profile.html" method="post">
+                        <div class="group">
+                            <label for="reguser" class="label">Username or Email</label>
+                            <input name="reguser" id="reguser" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="regpass" class="label">Password</label>
+                            <input name="regpass" id="regpass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <label for="repass" class="label">Confirm Password</label>
+                            <input name="repass" id="repass" type="password" class="input" data-type="password">
+                        </div>
+                        <div class="group">
+                            <input type="submit" class="button" value="Register">
+                        </div>
+                    </form>
+                    <hr data-content="OR" class="hr-text">
+                    <p>
+                        <a href="./profile.html" class="btn btn-block btn-twitter"> <i class="fa fa-twitter"></i>   Login Twitter</a>
+                        <a href="./profile.html" class="btn btn-block btn-facebook"> <i class="fa fa-facebook"></i>   Login facebook</a>
+                    </p>
 
                 </div>
             </div>
@@ -121,7 +140,7 @@
     </div>
 
     <!-- Footer Section Begin -->
-    <footer class="footer footer--normal spad set-bg" data-setbg="../assets/img/index/FT.jpg">
+    <footer class="footer footer--normal spad set-bg" data-setbg="../assets/img/index/FT.jpg" style="background-image: url('../assets/img/index/FT.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -169,6 +188,7 @@
 
     <!-- Vendor JS Files -->
     <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/jquery/jquery.validate.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.js"></script>
     <script src="../vendor/aos/aos.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -177,7 +197,7 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/login.js"></script>
-    <script src="../assets/js//index/index.js"></script>
+
 </body>
 
 </html>
