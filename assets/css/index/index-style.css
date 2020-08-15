@@ -523,7 +523,7 @@
         top: 12px;
         width: 16px;
         height: 20px;
-        background: url(/assets/img/index/play-default.png);
+        background: url(../../img/index/play-default.png);
         content: "";
     }
     
@@ -533,7 +533,7 @@
     }
     
     .jp-state-playing .jp-play:after {
-        background: url(/assets/img/index/pause.png) !important;
+        background: url(../../img/index/pause.png) !important;
         left: 15px;
         top: 12px;
     }
@@ -544,7 +544,7 @@
     }
     
     .jp-audio .jp-play:focus:after {
-        background: url(/assets/img/index/play.png);
+        background: url(../../img/index/play.png);
     }
     
     .jp-seek-bar>div {
