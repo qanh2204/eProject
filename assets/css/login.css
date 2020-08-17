@@ -190,7 +190,7 @@
    }
    
    .login-html .sign-in-htm,
-   .login-html .for-pwd-htm {
+   .login-html .for-reg-htm {
        top: 0;
        left: 0;
        right: 0;
@@ -331,7 +331,7 @@
        transform: rotate(0);
    }
    
-   .login-html .for-pwd:checked+.tab+.login-form .for-pwd-htm {
+   .login-html .for-pwd:checked+.tab+.login-form .for-reg-htm {
        -webkit-transform: rotate(0);
        transform: rotate(0);
    }
@@ -383,7 +383,6 @@
    
    .footer {
        padding-top: 160px;
-       padding-bottom: 60px;
        margin-top: -547px;
    }
    
