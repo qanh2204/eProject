@@ -11,33 +11,40 @@
     font-family: 'Now Thin';
     font-style: normal;
     font-weight: normal;
-    src: local('Now Thin'), url('/assets/font/index/Now-Thin.woff') format('woff');
+    src: local('Now Thin'), url('../../font/index/Now-Thin.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Now Light';
     font-style: normal;
     font-weight: normal;
-    src: local('Now Light'), url('/assets/font/index/Now-Light.woff') format('woff');
+    src: local('Now Light'), url('../../font/index/Now-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Now Medium';
     font-style: normal;
     font-weight: normal;
-    src: local('Now Medium'), url('/assets/font/index/Now-Medium.woff') format('woff');
+    src: local('Now Medium'), url('../../font/index/Now-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Now Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Now Bold'), url('/assets/font/index/Now-Bold.woff') format('woff');
+    src: local('Now Bold'), url('../../font/index/Now-Bold.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Now Black';
     font-style: normal;
     font-weight: normal;
-    src: local('Now Black'), url('/assets/font/index/Now-Black.woff') format('woff');
+    src: local('Now Black'), url('../../font/index/Now-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rockville Solid Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockville Solid Regular'), url('../../font/index/Rockville-Solid.woff') format('woff');
 }

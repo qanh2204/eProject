@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact US</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../vendor/aos/aos.css" rel="stylesheet">
     <!-- ////////// -->
     <link rel="stylesheet" href="../assets/css/index/nowfont.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/index/rockville.css" type="text/css">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="Name" id="Name" placeholder="Name"
-                                title="enter your name if any.">
+                                title="enter your name if any." required data-error="Must not be left blank">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -109,8 +109,8 @@
                             </label>
                         </div>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone"
-                                title="enter your phone number if any.">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter phone"
+                                title="enter your phone number if any." required data-error="Must not be left blank">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -120,7 +120,7 @@
                             </label>
                         </div>
                         <div class="col-md-10">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com"
+                            <input type="email" class="form-control" name="email" id="email" placeholder="You@email.com"
                                 title="enter your email.">
                         </div>
                     </div>
@@ -223,7 +223,7 @@
 
     <script src="../vendor/jquery/jquery.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../vendor/aos/aos.js"></script>
     <!-- /////////// -->
     <script src="../assets/js/index/jquery.slicknav.js"></script>
     <script src="../assets/js/index/index.js"></script>
