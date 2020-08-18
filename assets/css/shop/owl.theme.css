@@ -1,0 +1,102 @@
+/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/
+#brands-carousel .owl-item > div{
+  margin: 3px;
+}
+.owl-carousel-play{margin-left: -10px; margin-right: -10px;}
+#owl-theme .owl-item img{
+  display: inline-block;
+  height: auto;
+}
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+        position: absolute;
+    top: 50%;
+    color: #000;
+    width: 55px;
+    height: 24px;
+    margin-top: -20px;
+     /*opacity: 0;
+     visibility: hidden;*/
+    transition: all ease 0.3s;
+    z-index: 2;
+    background: #fff;
+}
+.owl-theme .owl-controls .owl-buttons div:hover:before{color: #000;}
+.owl-theme:hover .owl-controls .owl-buttons div{
+	opacity: 0.9;
+     visibility: visible;
+    transition: all ease 0.3s;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev{right: 50px; border-right: 1px solid #e1e1e1;}
+.owl-theme .owl-controls .owl-buttons div.owl-next{right: -10px;}
+
+.owl-theme .owl-controls .owl-buttons div:before{
+	font-size: 26px;
+    line-height: 24px;
+    font-family: 'FontAwesome';
+    color: #999;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev:before{content: "\f104";}
+.owl-theme .owl-controls .owl-buttons div.owl-next:before{content: "\f105";}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}

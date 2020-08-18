@@ -1,0 +1,254 @@
+/* CUSTOM BOOTSTRAP **/
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  .nav:before, .nav:after {
+    content: " ";
+    display: table; }
+  .nav:after {
+    clear: both; }
+  .nav > li {
+    position: relative;
+    display: block; }
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px; }
+      .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: transparent; }
+  .nav > li > a > img {
+    max-width: none; }
+
+.nav-tabs {
+  border-bottom: 1px solid transparent;
+  margin: 0; }
+  .nav-tabs > li {
+    display: inline-block;
+    margin-bottom: -3px; }
+    .nav-tabs > li > a {
+      text-transform: uppercase;
+      margin-right: 2px;
+      line-height: inherit;
+      color: #999;
+      border: 1px solid transparent;
+      border-radius: 0 0 0 0; }
+      .nav-tabs > li > a:hover {
+        border-color: transparent transparent transparent; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+      color: #000;
+      background-color: #fff;
+      cursor: default; }
+
+.tab-content {
+  padding: 20px; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+/* TEMPLATE POPUP */
+.tharavan-popup {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  height: 0;
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .tharavan-popup.wishlist-popup .btn-cart {
+    display: none; }
+  .tharavan-popup.loading {
+    z-index: 999; }
+  .tharavan-popup .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0; }
+  .tharavan-popup .content {
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    min-width: 490px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  @media (max-width: 1500px) {
+    .tharavan-popup .content {
+      max-width: 700px; } }
+  @media (max-width: 1300px) {
+    .tharavan-popup .content {
+      max-width: 650px; } }
+  .tharavan-popup.active {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    height: auto;
+    width: auto; }
+    .tharavan-popup.active .content {
+      max-height: 100%; }
+    .tharavan-popup.active .overlay {
+      width: 100%;
+      height: 100%; }
+  .tharavan-popup .close-window {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+    color: #000;
+    width: 24px;
+    height: 24px;
+    text-align: center; }
+    .tharavan-popup .close-window i {
+      line-height: 24px; }
+  .tharavan-popup .success-message:hover:before {
+    background: #ffb533;
+    color: #fff; }
+  .tharavan-popup .success-message:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px; }
+  .tharavan-popup.loading .loader {
+    left: 50%;
+    position: fixed;
+    top: 50%;
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%); }
+  .tharavan-popup .product-name {
+    font-weight: 700;
+    font-family: Hind, Arial, sans-serif; }
+
+.filter-block {
+  clear: both; }
+  .filter-block ul.box-list-stype li {
+    line-height: 30px; }
+  .filter-block ul.box-grid-stype li {
+    display: inline-block;
+    padding: 0 0;
+    padding-right: 10px; }
+    .filter-block ul.box-grid-stype li .color {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #333; }
+    .filter-block ul.box-grid-stype li input {
+      display: none; }
+    .filter-block ul.box-grid-stype li a span {
+      display: block;
+      width: 30px;
+      height: 20px; }
+    .filter-block ul.box-grid-stype li.active .color {
+      border: 2px solid #e0545f; }
+    .filter-block ul.box-grid-stype li label {
+      color: #e0545f; }
+  .filter-block ul.box-grid-stype.sizes a span {
+    width: 50px;
+    border: solid 1px #CCC; }
+  .filter-block ul.box-list-stype li label {
+    color: #e0545f; }
+  .filter-block .clear {
+    float: right;
+    line-height: 15px;
+    text-transform: none;
+    color: red; }
+  .filter-block h5.filter-title {
+    font-size: 12px;
+    color: #E0545F;
+    margin: 20px 0; }
+
+.colors .red {
+  background-color: #f50000; }
+
+.colors .blue {
+  background-color: #305885; }
+
+.colors .white {
+  background-color: #ffffff; }
+
+.colors .pink {
+  background-color: #f4dfe6; }
+
+.colors .red {
+  background-color: #ba0000; }
+
+.colors .green {
+  background-color: #485052; }
+
+.colors .black {
+  background-color: #000000; }
+
+.colors .gray {
+  background-color: #515151; }
+
+.colors .yellow {
+  background-color: #ffff00; }
+
+.li-price input {
+  display: none; }
+
+.badge-tag-st {
+  background: transparent none repeat scroll 0 0;
+  border-bottom: 2px solid #ef2840;
+  color: #ef2840;
+  display: inline-block;
+  font-family: kelsonBold, serif;
+  font-size: 16px;
+  position: absolute;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  width: 50px;
+  padding: 0;
+  right: 5px;
+  top: 10px; }
+
+.badge-tag-st-1 {
+  background: transparent none repeat scroll 0 0;
+  border-bottom: 2px solid #ef2840;
+  color: #ef2840;
+  display: inline-block;
+  font-family: kelsonBold, serif;
+  font-size: 16px;
+  position: absolute;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none;
+  width: 50px;
+  padding: 0;
+  right: 5px;
+  top: 10px; }
