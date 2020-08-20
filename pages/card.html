@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rhythm house">
-    <meta name="keywords" content="Rhythm house, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>copy</title>
+    <title>Shopping Cart</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,19 +13,20 @@
     <link href="../assets/img/logo.svg" rel="icon">
     <link href="../assets/img/logo.svg" rel="apple-touch-icon">
 
-    <!-- Css Styles -->
-    <!-- ////////// -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" type="text/css">
-    <!-- ////////// -->
-    <link rel="stylesheet" href="assets/css/index/nowfont.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/index/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/index/index-style.css" type="text/css">
 
+    <!-- Vendor CSS Files -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="../vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/card.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/index/index-style.css" type="text/css">
 
 </head>
 
 <body>
+
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -41,8 +39,8 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="header__logo ">
-                        <a href="./index.html">
-                            <img src="assets/img/index/logo.svg" alt="">
+                        <a href="../index.html">
+                            <img src="../assets/img/index/logo.svg" alt="">
                         </a>
 
                     </div>
@@ -80,9 +78,90 @@
     </header>
 
     <!-- header end  -->
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <!-- shopping_cart -->
+
+    <h1>Shopping Cart</h1>
+
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Image</label>
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="../assets/img/product/new/justin-cd.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Justin Cd</div>
+                <p class="product-description"> 16 songs + bonus song “the lakes"</p>
+            </div>
+            <div class="product-price">25</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+        Remove
+      </button>
+            </div>
+            <div class="product-line-price">50</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="../assets/img/product/justin-tape">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Justin Tape</div>
+                <p class="product-description">1 of 8 collectible album lyric booklets (each version contains 5 unique photos and artwork)</p>
+            </div>
+            <div class="product-price">12</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+        Remove
+      </button>
+            </div>
+            <div class="product-line-price">12</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">62</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.10</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">81.10</div>
+            </div>
+        </div>
+
+        <button class="checkout">Checkout</button>
+
+
+    </div>
+    <!-- ./shopping_cart -->
+    <hr>
+
     <!-- Footer Section Begin -->
-    <footer class="footer footer--normal spad set-bg" data-setbg="assets/img/index/FT.jpg">
+    <footer class="footer footer--normal spad set-bg" data-setbg="../assets/img/index/FT.jpg" style="background-image: url('../assets/img/index/FT.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -103,7 +182,7 @@
                 </div>
                 <div class="col-lg-4 offset-lg-1 col-md-6">
                     <div class="footer__social countdown__text">
-                        <a href="./index.html"><img src="assets/img/index/logo.svg" alt=""></a>
+                        <a href="./index.html"><img src="../assets/img/index/logo.svg" alt=""></a>
 
                         <h2>Rhythm House</h2>
                         <div class="footer__social__links">
@@ -128,15 +207,27 @@
     </footer>
     <!-- Footer Section End -->
 
-
-    <!-- Js Plugins -->
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="../vendor/aos/aos.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- /////////// -->
-    <script src="assets/js/index/jquery.slicknav.js"></script>
-    <script src="assets/js//index/index.js"></script>
-    <!-- /////////// -->
+    <script src="../assets/js/index/jquery.slicknav.js"></script>
 
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/card.js"></script>
+    <script>
+        (function($) {
+
+            $(window).on('load', function() {
+                $(".loader").fadeOut();
+                $("#preloder").delay(200).fadeOut("slow");
+            });
+        })(jQuery);
+        AOS.init();
+    </script>
 </body>
 
 </html>

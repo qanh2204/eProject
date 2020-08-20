@@ -1,6 +1,3 @@
-@@ -0,
-0+1,
-495 @@
 /*---------------------
   Header
 -----------------------*/
@@ -159,6 +156,7 @@ h3,
 h4,
 h5,
 h6 {
+    text-align: center;
     font-family: 'Catamaran';
     font-weight: 800 !important;
 }
@@ -277,6 +275,7 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
+    margin-left: 50px;
     background-color: #ee0979;
     border-color: #ee0979;
 }
@@ -316,6 +315,25 @@ header.masthead .bg-circle-4 {
 
 .breadcrumb {
     justify-content: center;
+}
+
+.menu #menu-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px 10px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: Black;
+    margin-bottom: 10px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 50px;
+    font-family: "Playfair Display", serif;
+}
+
+.menu #menu-flters li:hover,
+.menu #menu-flters li.filter-active {
+    color: #cda45e;
 }
 
 

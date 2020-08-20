@@ -310,7 +310,16 @@
 
     <!-- Template Main JS File  -->
     <script src="../assets/js/about.js"></script>
-    <script src="../assets/js//index/index.js"></script>
+    <!-- <script src="../assets/js//index/index.js"></script> -->
+    <script>
+        (function($) {
+
+            $(window).on('load', function() {
+                $(".loader").fadeOut();
+                $("#preloder").delay(200).fadeOut("slow");
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>
